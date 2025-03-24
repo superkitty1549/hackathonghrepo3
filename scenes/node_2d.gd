@@ -1,10 +1,10 @@
 extends Node2D
 
-@export var messages: Array[String] = ["Huh.. Where am I? (space or enter to continue)", "It's so eerily quiet here... wonder if there's anyone else here?", "Oh... this is so weird...", "Etched in the back of this sign says...","Herein lies the remains of the former glorious ChuChu Island.","Wait, wasn't ChuChu Island that one place we learned about in school?","The greatest island to ever exist, or whatever. Supposedly nothing ever went wrong. Well, we'll see about that.","Hmm, seems like the only thing that isn't super weird is these purple circles on the ground...","I guess I'll follow them and see where that takes me."]
+@export var messages: Array[String] = ["Whoa, what's that ahead?","Oh, I've read about this in the books!","I think this is the one named... Kami?","I didn't read this out loud earlier, but the sign also said that if I wanted to try to save them...","Uhhh...","Oh, right! Walk up to them and hit space twice!","Hmm, it wouldn't hurt to try that once.., right?"]
 
 var player_near = false
 var message_index = 0
-
+ 
 @onready var dialog_ui = $DialogUI  # Ensure this node exists!
 @onready var dialog_text = $DialogUI/Control/RichTextLabel
 @onready var area = $Area2D  # Ensure this exists!

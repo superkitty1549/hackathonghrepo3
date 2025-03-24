@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://e5lkht7yjig6"
-path="res://.godot/imported/grasstosand.png-9c4668a6e9359436cc8815b00058a334.ctex"
+uid="uid://db1cpjsefwbqs"
+path="res://.godot/imported/biscuithouse.png-400f4acb8686e3aaebb6d5438058cd87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/default_map/grasstosand.png"
-dest_files=["res://.godot/imported/grasstosand.png-9c4668a6e9359436cc8815b00058a334.ctex"]
+source_file="res://houses/biscuithouse.png"
+dest_files=["res://.godot/imported/biscuithouse.png-400f4acb8686e3aaebb6d5438058cd87.ctex"]
 
 [params]
 

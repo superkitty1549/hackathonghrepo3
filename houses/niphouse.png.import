@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ba4nvyk4iw67i"
-path="res://.godot/imported/sandtowater.png-154aa924bb98e1ed5e9d02f1df2fdc39.ctex"
+uid="uid://bnw4q36trq4jc"
+path="res://.godot/imported/niphouse.png-86cfb13f2271ca7136c83444a29734c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/default_map/sandtowater.png"
-dest_files=["res://.godot/imported/sandtowater.png-154aa924bb98e1ed5e9d02f1df2fdc39.ctex"]
+source_file="res://houses/niphouse.png"
+dest_files=["res://.godot/imported/niphouse.png-86cfb13f2271ca7136c83444a29734c0.ctex"]
 
 [params]
 

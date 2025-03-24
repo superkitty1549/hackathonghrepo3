@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dw8bmoo4bh65j"
-path="res://.godot/imported/wall.png-f56fb8008c2979726734105ce75e91e2.ctex"
+uid="uid://ba4nvyk4iw67i"
+path="res://.godot/imported/sandtowater.png-dbb831bd03e1f75d6f0f5dcadfc03b1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/default_map/wall.png"
-dest_files=["res://.godot/imported/wall.png-f56fb8008c2979726734105ce75e91e2.ctex"]
+source_file="res://assets/default_map/sandtowater.png"
+dest_files=["res://.godot/imported/sandtowater.png-dbb831bd03e1f75d6f0f5dcadfc03b1d.ctex"]
 
 [params]
 

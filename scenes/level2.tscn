@@ -24,7 +24,7 @@ layer_2/y_sort_enabled = true
 [node name="Portals" type="Node2D" parent="."]
 
 [node name="NorthScenePortal" parent="Portals" node_paths=PackedStringArray("spawn_point") instance=ExtResource("4_1376w")]
-destination = "res://scenes/level1.tscn"
+destination = "res://scenes/level1.tscn "
 spawn_point = NodePath("SpawnPoint")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/NorthScenePortal"]

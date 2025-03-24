@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blqdaf87toen5"
-path="res://.godot/imported/sandwatercorner.png-f1293b68c66a8c68eda4ed788e2f44d7.ctex"
+uid="uid://dk1lobbub042n"
+path="res://.godot/imported/doorway.png-57c1d3b8dcb1fc6ea8fc6badf6b0a73e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/default_map/sandwatercorner.png"
-dest_files=["res://.godot/imported/sandwatercorner.png-f1293b68c66a8c68eda4ed788e2f44d7.ctex"]
+source_file="res://assets/default_map/doorway.png"
+dest_files=["res://.godot/imported/doorway.png-57c1d3b8dcb1fc6ea8fc6badf6b0a73e.ctex"]
 
 [params]
 

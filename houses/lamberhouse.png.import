@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5l5ncdiv7vsc"
-path="res://.godot/imported/sand.png-7309bc29201fbe70b1a10b42a1a7db46.ctex"
+uid="uid://c7bsyllxyce77"
+path="res://.godot/imported/lamberhouse.png-326e98565c2aacddd16a3e629feda49e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/default_map/sand.png"
-dest_files=["res://.godot/imported/sand.png-7309bc29201fbe70b1a10b42a1a7db46.ctex"]
+source_file="res://houses/lamberhouse.png"
+dest_files=["res://.godot/imported/lamberhouse.png-326e98565c2aacddd16a3e629feda49e.ctex"]
 
 [params]
 
