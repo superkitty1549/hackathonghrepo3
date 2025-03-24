@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var messages: Array[String] = ["Woah... where am I?","What happened to the place I was just in?","Wait... is this ChuChu Island?","It seems like the super successful place the books talk about...","But then... what was...","You know what? Maybe it's better to not ask too many questions.","I'm glad I got to help restore ChuChu Island to its former glory.","This is a really nice place."]
+@export var messages: Array[String] = ["It's honestly kind of creepy how the houses are all such weirdly coloured...","The villagers and the houses are nothing like what they taught us in school...","I honestly feel really bad for these villagers.","Who knows what they might be going through?"]
 
 var player_near = false
 var message_index = 0
