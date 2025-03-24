@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://cqah7lcus76ve" path="res://scenes/GameData.gd" id="1_2ku1j"]
 [ext_resource type="Script" uid="uid://bo2ooxostbiug" path="res://scenes/sign.gd" id="4_ejswk"]
-[ext_resource type="Texture2D" uid="uid://bxenar7xjx43v" path="res://assets/sprites/objects/objects.png" id="5_ejswk"]
 [ext_resource type="Script" uid="uid://dsxkh7dwnq1r2" path="res://scenes/node_2d.gd" id="6_bbk5w"]
 [ext_resource type="PackedScene" uid="uid://dkr4o1jd2byx7" path="res://actors/slime/slime.tscn" id="6_j1ocw"]
 [ext_resource type="TileSet" uid="uid://n1q1yw4t2q60" path="res://assets/tileset.tres" id="6_m1sw2"]
@@ -13,6 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://fial3xweeepx" path="res://objects/others/sign.tscn" id="9_qkr35"]
 [ext_resource type="Script" uid="uid://dtv5dth0lclvw" path="res://scenes/sign_6.gd" id="10_2ku1j"]
 [ext_resource type="Script" uid="uid://6ek0exhe712i" path="res://scenes/sign_7.gd" id="11_f31uk"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ku1j"]
+load_path = "res://.godot/imported/objects.png-d2d4a55345a132e9a8ff3dd2e52d6372.ctex"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ejswk"]
 radius = 12.0416
@@ -76,7 +78,7 @@ offset_bottom = 8.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Objects/sign2"]
 position = Vector2(-35, -32)
-texture = ExtResource("5_ejswk")
+texture = SubResource("CompressedTexture2D_2ku1j")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
@@ -128,7 +130,7 @@ offset_bottom = 8.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Objects/sign"]
 position = Vector2(61, 35)
-texture = ExtResource("5_ejswk")
+texture = SubResource("CompressedTexture2D_2ku1j")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
@@ -180,7 +182,7 @@ offset_bottom = 8.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Objects/sign3"]
 position = Vector2(242, 51)
-texture = ExtResource("5_ejswk")
+texture = SubResource("CompressedTexture2D_2ku1j")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
@@ -233,7 +235,7 @@ offset_bottom = 8.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Objects/sign4"]
 position = Vector2(270, 158)
-texture = ExtResource("5_ejswk")
+texture = SubResource("CompressedTexture2D_2ku1j")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
@@ -286,7 +288,7 @@ offset_bottom = 8.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Objects/sign5"]
 position = Vector2(270, 358)
-texture = ExtResource("5_ejswk")
+texture = SubResource("CompressedTexture2D_2ku1j")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
@@ -339,7 +341,7 @@ offset_bottom = 8.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Objects/sign6"]
 position = Vector2(128, 406)
-texture = ExtResource("5_ejswk")
+texture = SubResource("CompressedTexture2D_2ku1j")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
@@ -392,7 +394,7 @@ offset_bottom = 8.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Objects/sign7"]
 position = Vector2(-66, 279)
-texture = ExtResource("5_ejswk")
+texture = SubResource("CompressedTexture2D_2ku1j")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
@@ -413,7 +415,7 @@ one_shot = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(348, 301)
-texture = ExtResource("5_ejswk")
+texture = SubResource("CompressedTexture2D_2ku1j")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 

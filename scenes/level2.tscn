@@ -8,7 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://ccjfoc8qsephh" path="res://assets/sprites/characters/scoutf.png" id="7_76toy"]
 [ext_resource type="Script" uid="uid://bmmfknmwhclie" path="res://scenes/sign_5.gd" id="7_xa7n4"]
 [ext_resource type="Texture2D" uid="uid://caterjier8p7v" path="res://assets/sprites/characters/biscuits.png" id="8_8g4ke"]
-[ext_resource type="Texture2D" uid="uid://bxenar7xjx43v" path="res://assets/sprites/objects/objects.png" id="8_bo4dx"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ku1j"]
+load_path = "res://.godot/imported/objects.png-d2d4a55345a132e9a8ff3dd2e52d6372.ctex"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_76toy"]
 radius = 12.0416
@@ -95,7 +97,7 @@ offset_bottom = 8.0
 
 [node name="Sprite2D" type="Sprite2D" parent="sign8"]
 position = Vector2(33, 76)
-texture = ExtResource("8_bo4dx")
+texture = SubResource("CompressedTexture2D_2ku1j")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 

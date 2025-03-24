@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://fial3xweeepx"]
 
-[ext_resource type="Texture2D" uid="uid://bxenar7xjx43v" path="res://assets/sprites/objects/objects.png" id="1_rabyf"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ku1j"]
+load_path = "res://.godot/imported/objects.png-d2d4a55345a132e9a8ff3dd2e52d6372.ctex"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3phin"]
 radius = 6.0
@@ -10,7 +11,7 @@ y_sort_enabled = true
 
 [node name="Sprite" type="Sprite2D" parent="."]
 position = Vector2(0, -2)
-texture = ExtResource("1_rabyf")
+texture = SubResource("CompressedTexture2D_2ku1j")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
