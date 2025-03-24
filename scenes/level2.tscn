@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dtniymddltcjw"]
+[gd_scene load_steps=16 format=3 uid="uid://dtniymddltcjw"]
 
 [ext_resource type="TileSet" uid="uid://n1q1yw4t2q60" path="res://assets/tileset.tres" id="1_ldwxu"]
 [ext_resource type="Texture2D" uid="uid://cncxwj136ykxv" path="res://assets/sprites/characters/kami.png" id="4_hrcei"]
@@ -8,6 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://ccjfoc8qsephh" path="res://assets/sprites/characters/scoutf.png" id="7_76toy"]
 [ext_resource type="Script" uid="uid://bmmfknmwhclie" path="res://scenes/sign_5.gd" id="7_xa7n4"]
 [ext_resource type="Texture2D" uid="uid://caterjier8p7v" path="res://assets/sprites/characters/biscuits.png" id="8_8g4ke"]
+[ext_resource type="Script" uid="uid://bqogskx5rslvb" path="res://scenes/aaa.gd" id="9_56gwk"]
+[ext_resource type="Script" uid="uid://bbxv0cj3mkhyr" path="res://scenes/bbb.gd" id="10_ve5ok"]
+[ext_resource type="Script" uid="uid://dyya7t5i7bc0m" path="res://scenes/ccc.gd" id="11_cleqw"]
+[ext_resource type="Script" uid="uid://rfka5ad2jxhj" path="res://scenes/ddd.gd" id="12_wvb8j"]
+[ext_resource type="Script" uid="uid://bfirmcwuasjbq" path="res://scenes/eee.gd" id="13_g8vcy"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ku1j"]
 load_path = "res://.godot/imported/objects.png-d2d4a55345a132e9a8ff3dd2e52d6372.ctex"
@@ -113,5 +118,270 @@ visible = false
 position = Vector2(-27, -14)
 
 [node name="ExitTimer" type="Timer" parent="sign8"]
+wait_time = 0.2
+one_shot = true
+
+[node name="sign9" type="Node2D" parent="."]
+position = Vector2(-8, -2)
+script = ExtResource("9_56gwk")
+
+[node name="DialogUI" type="CanvasLayer" parent="sign9"]
+visible = false
+offset = Vector2(200, 200)
+transform = Transform2D(1, 0, 0, 1, 200, 200)
+
+[node name="Control" type="Control" parent="sign9/DialogUI"]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(2, 2)
+
+[node name="Panel" type="Panel" parent="sign9/DialogUI/Control"]
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="sign9/DialogUI/Control"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 80.0
+scale = Vector2(0.5, 0.5)
+tab_size = 3
+
+[node name="Button" type="Button" parent="sign9/DialogUI/Control"]
+visible = false
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Sprite2D" type="Sprite2D" parent="sign9"]
+position = Vector2(80, 136)
+texture = SubResource("CompressedTexture2D_2ku1j")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Area2D" type="Area2D" parent="sign9"]
+position = Vector2(133, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sign9/Area2D"]
+position = Vector2(-53, 112)
+shape = SubResource("CircleShape2D_76toy")
+
+[node name="Sign" parent="sign9" instance=ExtResource("6_bhxmt")]
+visible = false
+position = Vector2(-27, -14)
+
+[node name="ExitTimer" type="Timer" parent="sign9"]
+wait_time = 0.2
+one_shot = true
+
+[node name="sign10" type="Node2D" parent="."]
+position = Vector2(-8, -2)
+script = ExtResource("10_ve5ok")
+
+[node name="DialogUI" type="CanvasLayer" parent="sign10"]
+visible = false
+offset = Vector2(200, 200)
+transform = Transform2D(1, 0, 0, 1, 200, 200)
+
+[node name="Control" type="Control" parent="sign10/DialogUI"]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(2, 2)
+
+[node name="Panel" type="Panel" parent="sign10/DialogUI/Control"]
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="sign10/DialogUI/Control"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 80.0
+scale = Vector2(0.5, 0.5)
+tab_size = 3
+
+[node name="Button" type="Button" parent="sign10/DialogUI/Control"]
+visible = false
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Sprite2D" type="Sprite2D" parent="sign10"]
+position = Vector2(334, 128)
+texture = SubResource("CompressedTexture2D_2ku1j")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Area2D" type="Area2D" parent="sign10"]
+position = Vector2(133, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sign10/Area2D"]
+position = Vector2(201, 104)
+shape = SubResource("CircleShape2D_76toy")
+
+[node name="Sign" parent="sign10" instance=ExtResource("6_bhxmt")]
+visible = false
+position = Vector2(-27, -14)
+
+[node name="ExitTimer" type="Timer" parent="sign10"]
+wait_time = 0.2
+one_shot = true
+
+[node name="sign11" type="Node2D" parent="."]
+position = Vector2(-8, -2)
+script = ExtResource("11_cleqw")
+
+[node name="DialogUI" type="CanvasLayer" parent="sign11"]
+visible = false
+offset = Vector2(200, 200)
+transform = Transform2D(1, 0, 0, 1, 200, 200)
+
+[node name="Control" type="Control" parent="sign11/DialogUI"]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(2, 2)
+
+[node name="Panel" type="Panel" parent="sign11/DialogUI/Control"]
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="sign11/DialogUI/Control"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 80.0
+scale = Vector2(0.5, 0.5)
+tab_size = 3
+
+[node name="Button" type="Button" parent="sign11/DialogUI/Control"]
+visible = false
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Sprite2D" type="Sprite2D" parent="sign11"]
+position = Vector2(216, 317)
+texture = SubResource("CompressedTexture2D_2ku1j")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Area2D" type="Area2D" parent="sign11"]
+position = Vector2(133, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sign11/Area2D"]
+position = Vector2(83, 293)
+shape = SubResource("CircleShape2D_76toy")
+
+[node name="Sign" parent="sign11" instance=ExtResource("6_bhxmt")]
+visible = false
+position = Vector2(-27, -14)
+
+[node name="ExitTimer" type="Timer" parent="sign11"]
+wait_time = 0.2
+one_shot = true
+
+[node name="sign12" type="Node2D" parent="."]
+position = Vector2(-8, -2)
+script = ExtResource("12_wvb8j")
+
+[node name="DialogUI" type="CanvasLayer" parent="sign12"]
+visible = false
+offset = Vector2(200, 200)
+transform = Transform2D(1, 0, 0, 1, 200, 200)
+
+[node name="Control" type="Control" parent="sign12/DialogUI"]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(2, 2)
+
+[node name="Panel" type="Panel" parent="sign12/DialogUI/Control"]
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="sign12/DialogUI/Control"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 80.0
+scale = Vector2(0.5, 0.5)
+tab_size = 3
+
+[node name="Button" type="Button" parent="sign12/DialogUI/Control"]
+visible = false
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Sprite2D" type="Sprite2D" parent="sign12"]
+position = Vector2(355, 517)
+texture = SubResource("CompressedTexture2D_2ku1j")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Area2D" type="Area2D" parent="sign12"]
+position = Vector2(133, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sign12/Area2D"]
+position = Vector2(222, 491)
+shape = SubResource("CircleShape2D_76toy")
+
+[node name="Sign" parent="sign12" instance=ExtResource("6_bhxmt")]
+visible = false
+position = Vector2(-27, -14)
+
+[node name="ExitTimer" type="Timer" parent="sign12"]
+wait_time = 0.2
+one_shot = true
+
+[node name="sign13" type="Node2D" parent="."]
+position = Vector2(-8, -2)
+script = ExtResource("13_g8vcy")
+
+[node name="DialogUI" type="CanvasLayer" parent="sign13"]
+visible = false
+offset = Vector2(200, 200)
+transform = Transform2D(1, 0, 0, 1, 200, 200)
+
+[node name="Control" type="Control" parent="sign13/DialogUI"]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(2, 2)
+
+[node name="Panel" type="Panel" parent="sign13/DialogUI/Control"]
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="sign13/DialogUI/Control"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 80.0
+scale = Vector2(0.5, 0.5)
+tab_size = 3
+
+[node name="Button" type="Button" parent="sign13/DialogUI/Control"]
+visible = false
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Sprite2D" type="Sprite2D" parent="sign13"]
+position = Vector2(72, 523)
+texture = SubResource("CompressedTexture2D_2ku1j")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Area2D" type="Area2D" parent="sign13"]
+position = Vector2(133, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sign13/Area2D"]
+position = Vector2(-61, 498)
+shape = SubResource("CircleShape2D_76toy")
+
+[node name="Sign" parent="sign13" instance=ExtResource("6_bhxmt")]
+visible = false
+position = Vector2(-27, -14)
+
+[node name="ExitTimer" type="Timer" parent="sign13"]
 wait_time = 0.2
 one_shot = true
