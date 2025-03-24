@@ -686,7 +686,6 @@ height = 16.0
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("anim_player", "anim_tree")]
 y_sort_enabled = true
-collision_layer = 2
 script = ExtResource("1_22mku")
 anim_player = NodePath("AnimationPlayer")
 anim_tree = NodePath("AnimationTree")

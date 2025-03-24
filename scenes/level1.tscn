@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://fial3xweeepx" path="res://objects/others/sign.tscn" id="9_qkr35"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ejswk"]
-radius = 5.09902
+radius = 6.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xiugp"]
 size = Vector2(14, 12)
@@ -45,10 +45,10 @@ y_sort_enabled = false
 position = Vector2(464, 346)
 
 [node name="sign2" type="Node2D" parent="Objects"]
+position = Vector2(-8, -2)
 script = ExtResource("4_ejswk")
 
 [node name="Sprite2D" type="Sprite2D" parent="Objects/sign2"]
-position = Vector2(0, -1)
 texture = ExtResource("5_ejswk")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
@@ -57,6 +57,14 @@ region_rect = Rect2(0, 0, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/sign2/Area2D"]
 shape = SubResource("CircleShape2D_ejswk")
+
+[node name="Sign" parent="Objects/sign2" instance=ExtResource("9_qkr35")]
+visible = false
+position = Vector2(-27, -14)
+
+[node name="ExitTimer" type="Timer" parent="Objects/sign2"]
+wait_time = 0.2
+one_shot = true
 
 [node name="DialogUI" type="CanvasLayer" parent="Objects"]
 visible = false

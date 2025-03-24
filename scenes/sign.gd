@@ -1,28 +1,36 @@
-extends Node2D  # ✅ Keep this as Node2D
+extends Node2D
 
-@export var messages: Array[String] = ["Hello, traveler!", "This is a sign.", "Press E to interact, and Enter to continue."]  
+@export var messages: Array[String] = ["Hello, traveler!", "This is a sign.", "Press E to interact, and Enter to continue."]
 
 var player_near = false
 var message_index = 0
 
-@onready var dialog_ui = $"../DialogUI"  
+@onready var dialog_ui = $"../DialogUI"
 @onready var dialog_text = $"../DialogUI/RichTextLabel"
 @onready var area = $Area2D  # ✅ Reference Area2D
+@onready var exit_timer = $ExitTimer  # ✅ Reference Timer (Add a Timer node in the editor)
 
 func _ready():
-	dialog_ui.visible = false  # Hide dialog at start
-	area.body_entered.connect(_on_body_entered)  # ✅ Connects body_entered to _on_body_entered
+	dialog_ui.visible = false
+	area.body_entered.connect(_on_body_entered)
 	area.body_exited.connect(_on_body_exited)
-
+	exit_timer.wait_time = 0.2  # 200ms delay to prevent instant exit
+	exit_timer.one_shot = true
+	exit_timer.timeout.connect(_on_exit_timer_timeout)
 
 func _process(delta):
 	if Input.is_action_just_pressed("interact"):
-		print("E Pressed!")  # Debugging
+		print("E Pressed!")
+
+	if player_near:
+		print("✅ player_near is TRUE")
+
 	if player_near and Input.is_action_just_pressed("interact"):
-		print("Interacting with sign!")  # Debugging
+		print("🎬 Starting dialogue!")
 		start_dialog()
 
 func start_dialog():
+	print("📜 Showing dialogue!")
 	dialog_ui.visible = true
 	message_index = 0
 	show_message()
@@ -39,16 +47,26 @@ func _input(event):
 		show_message()
 
 func end_dialog():
+	print("❌ Closing dialogue!")
 	dialog_ui.visible = false
 
 func _on_body_entered(body):
-	print("Something entered:", body.name)  # Debugging
+	print("🔥 body_entered triggered!")
+	print("Something entered:", body.name)
+
 	if body.is_in_group("player"):
-		print("✅ Player entered sign area!")  # Debugging
+		print("✅ Player entered sign area! Setting player_near = true")
 		player_near = true
+		print("🔹 player_near is now:", player_near)
 
 func _on_body_exited(body):
-	print("Something exited:", body.name)  # Debugging
+	print("❌ body_exited triggered!")
+	print("Something exited:", body.name)
+
 	if body.is_in_group("player"):
-		print("✅ Player left sign area!")  # Debugging
-		player_near = false
+		print("🚨 Player left sign area! Starting exit timer...")
+		exit_timer.start()  # Start delay before setting player_near = false
+
+func _on_exit_timer_timeout():
+	print("❌ Timer finished! Setting player_near = false")
+	player_near = false
